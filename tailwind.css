@@ -1,0 +1,35 @@
+@tailwind base;
+
+@layer base {
+  h1 {
+    @apply text-2xl font-bold;
+  }
+  h2 {
+    @apply text-xl font-semibold;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  a {
+    @apply text-link-on;
+  }
+
+  p {
+    @apply p-1
+  }
+
+  html,
+  body {
+    @apply bg-prim text-tex-prim tracking-wide leading-loose;
+  }
+
+  input, textarea, select{
+    @apply text-tex-sec
+  }
+}
+
+@tailwind components;
+
+
+
+@tailwind utilities;
