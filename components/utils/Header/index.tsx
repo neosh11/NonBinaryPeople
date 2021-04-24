@@ -5,7 +5,10 @@ import { pageRoutes } from '../../../lib/routes'
 const Header = ({ selectedKey }: { selectedKey: navKeys }) => {
   const [menuOpen, setMenuOpen] = useState(false)
 
-  const getSelectedDesktop = (key: navKeys) => {
+  const getSelectedDesktop = (key: navKeys, disabled = false) => {
+    if(disabled)return 'bg-link-on text-link-on px-3 py-2 rounded-md text-sm font-medium' 
+
+
     if (key === selectedKey) return 'bg-prim text-link-on px-3 py-2 rounded-md text-sm font-medium'
     return 'text-link-off bg-sec hover:bg-prim hover:text-link-on px-3 py-2 rounded-md text-sm font-medium'
   }
@@ -32,10 +35,10 @@ const Header = ({ selectedKey }: { selectedKey: navKeys }) => {
                   <a href={pageRoutes.home} className={getSelectedDesktop(navKeys.HOME)}>
                     {pageNames.home}
                   </a>
-                  <a href='#' className={getSelectedDesktop(navKeys.ABOUT)}>
+                  <a href='#' className={getSelectedDesktop(navKeys.ABOUT, true)}>
                     {pageNames.about}
                   </a>
-                  <a href='#' className={getSelectedDesktop(navKeys.BLOG)}>
+                  <a href='#' className={getSelectedDesktop(navKeys.BLOG, true)}>
                     {pageNames.blog}
                   </a>
                   <a href={pageRoutes.help} className={getSelectedDesktop(navKeys.HELP)}>
