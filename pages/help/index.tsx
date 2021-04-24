@@ -6,7 +6,6 @@ const buttonClass = 'text-link-off bg-sec hover:bg-prim hover:text-link-on px-3 
 export default function Home() {
   return (
     <General
-      iconHref='/ico/wave.ico'
       title='Non Binary People Org'
       selectedNavKey={navKeys.HELP}
       description='Find a community new you!'

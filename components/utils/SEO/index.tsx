@@ -7,7 +7,7 @@ interface Props {
   iconHref?: string
 }
 
-const SEOMeta = ({ title, description, canonical, iconHref = '/ico/eyes.ico' }: Props) => (
+const SEOMeta = ({ title, description, canonical, iconHref = '/favicon.ico' }: Props) => (
   <Head>
     <title>{title}</title>
 

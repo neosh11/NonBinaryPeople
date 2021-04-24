@@ -6,7 +6,6 @@ import { pageRoutes } from '../../lib/routes'
 export default function Home() {
   return (
     <General
-      iconHref='/ico/wave.ico'
       title='Non Binary People Org'
       selectedNavKey={navKeys.HELP}
       description='Find a community new you!'
