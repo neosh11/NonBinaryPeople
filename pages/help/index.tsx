@@ -13,7 +13,7 @@ export default function Home() {
       canonical={pageRoutes.help}
     >
       <div className='space-y-10 md:flex md:flex-col'>
-        Helpful Links
+        <h1>Helpful Links</h1>
         <a className={buttonClass} href={pageRoutes.helpCommunities}>
           {pageNames.communities}
         </a>
