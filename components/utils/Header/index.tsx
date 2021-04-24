@@ -19,8 +19,8 @@ const Header = ({ selectedKey }: { selectedKey: navKeys }) => {
       <div className='h-16 md:h-0' />
       <nav
         className={`${
-          menuOpen ? 'inset-0 z-40 bg-ter bg-opacity fixed opacity-75' : null
-        } bg-ter fixed md:relative`}
+          menuOpen ? 'inset-0 z-40 bg-ter bg-opacity fixed opacity-75 shadow-md' : null
+        } bg-ter fixed md:relative shadow-md`}
       >
         <div className='px-4 sm:px-6 lg:px-8 '>
           {/* if not visible then remove grid and justify huhu */}
