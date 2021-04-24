@@ -38,7 +38,7 @@ const Header = ({ selectedKey }: { selectedKey: navKeys }) => {
                   <a href='#' className={getSelectedDesktop(navKeys.BLOG)}>
                     {pageNames.blog}
                   </a>
-                  <a href='#' className={getSelectedDesktop(navKeys.HELP)}>
+                  <a href={pageRoutes.help} className={getSelectedDesktop(navKeys.HELP)}>
                     {pageNames.help}
                   </a>
                 </div>
@@ -88,13 +88,13 @@ const Header = ({ selectedKey }: { selectedKey: navKeys }) => {
             <a href={pageRoutes.home} className={getSelectedMob(navKeys.HOME)}>
               {pageNames.home}
             </a>
-            <a href={pageRoutes.about} className={getSelectedMob(navKeys.ABOUT)}>
+            <a href='#' className={getSelectedMob(navKeys.ABOUT)}>
               {pageNames.about}
             </a>
             <a href='#' className={getSelectedMob(navKeys.BLOG)}>
               {pageNames.blog}
             </a>
-            <a href='#' className={getSelectedMob(navKeys.HELP)}>
+            <a href={pageRoutes.help} className={getSelectedMob(navKeys.HELP)}>
               {pageNames.help}
             </a>
           </div>

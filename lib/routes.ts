@@ -1,5 +1,5 @@
 export const pageRoutes = {
     home: '/',
-    about: '/about',
-    stack: '/stack'
+    help: '/help',
+    helpCommunities: '/help/communities'
 }
