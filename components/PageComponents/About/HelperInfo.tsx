@@ -12,7 +12,7 @@ const ExistDisplay = ({ label, obj, href = null }) =>
 
 export default function HelperInfo({ person }: { person: IWebsitePerson }) {
   return (
-    <li className='space-x-4 flex'>
+    <li className='space-x-4 md:flex'>
       <div>{person.name}</div>
       <ExistDisplay label='github' obj={person.github} href={externalSocial.github + person.github} />
       <ExistDisplay label='twitter' obj={person.twitter} href={externalSocial.twitter + person.twitter} />
