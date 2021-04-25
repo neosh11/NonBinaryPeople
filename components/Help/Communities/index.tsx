@@ -35,45 +35,60 @@ const ChoiceForm = ({ data, setData, register, handleSubmit, reset }) => {
   }
   const selectClass =
     'mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md'
+  const labelClass = 'block text-sm font-medium text-gray-700'
   return (
     <>
       <form onChange={handleSubmit(onChange)}>
-        <select id='location' name='location' className={selectClass} {...register('location')}>
-          <option value='' key='countyNone'>
-            Any
-          </option>
-          {Array.from(CountryMap.keys()).map(x => (
-            <option value={x} key={CountryMap.get(x)}>
-              {CountryMap.get(x)}
+        <Card>
+          <label htmlFor='type' className={labelClass}>
+            Type
+          </label>
+          <select id='type' name='type' className={selectClass} {...register('type')}>
+            <option value='' key='typeAny'>
+              Any
             </option>
-          ))}
-        </select>
 
-        <select id='type' name='type' className={selectClass} {...register('type')}>
-          <option value='' key='typeAny'>
-            Any
-          </option>
+            <option value='online' key='online'>
+              Online
+            </option>
 
-          <option value='online' key='online'>
-            Online
-          </option>
-
-          <option value='regional' key='regional'>
-            Regional
-          </option>
-        </select>
-
-        {data.type == 'online' && (
-          <select id='online' name='online' className={selectClass} {...register('online')}>
+            <option value='regional' key='regional'>
+              Regional
+            </option>
+          </select>
+        </Card>
+        <Card>
+          <label htmlFor='location' className={labelClass}>
+            Location
+          </label>
+          <select id='location' name='location' className={selectClass} {...register('location')}>
             <option value='' key='countyNone'>
               Any
             </option>
-            {Array.from(OnlineGroupMap.keys()).map(x => (
-              <option value={x} key={OnlineGroupMap.get(x)}>
-                {OnlineGroupMap.get(x)}
+            {Array.from(CountryMap.keys()).map(x => (
+              <option value={x} key={CountryMap.get(x)}>
+                {CountryMap.get(x)}
               </option>
             ))}
           </select>
+        </Card>
+
+        {(data.type == 'online' || data.type == '') && (
+          <Card>
+            <label htmlFor='online' className={labelClass}>
+              Platform
+            </label>
+            <select id='online' name='online' className={selectClass} {...register('online')}>
+              <option value='' key='countyNone'>
+                Any
+              </option>
+              {Array.from(OnlineGroupMap.keys()).map(x => (
+                <option value={x} key={OnlineGroupMap.get(x)}>
+                  {OnlineGroupMap.get(x)}
+                </option>
+              ))}
+            </select>
+          </Card>
         )}
 
         <Button type='button' onClick={() => onReset()}>
