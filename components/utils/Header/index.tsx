@@ -6,7 +6,7 @@ const Header = ({ selectedKey }: { selectedKey: navKeys }) => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   const getSelectedDesktop = (key: navKeys, disabled = false) => {
-    if (disabled) return 'bg-link-on text-link-on px-3 py-2 rounded-md text-sm font-medium'
+    if (disabled) return 'bg-sec text-link-off px-3 py-2 rounded-md text-sm font-medium line-through'
 
     if (key === selectedKey) return 'bg-prim text-link-on px-3 py-2 rounded-md text-sm font-medium'
     return 'text-link-off bg-sec hover:bg-prim hover:text-link-on px-3 py-2 rounded-md text-sm font-medium'

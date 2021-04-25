@@ -7,12 +7,12 @@ export default function AboutPage() {
   return (
     <General
       title='Non Binary People Org'
-      selectedNavKey={navKeys.HOME}
+      selectedNavKey={navKeys.ABOUT}
       description="Hi we're here to help people get a better understanding of non-binary people"
-      canonical={pageRoutes.home}
+      canonical={pageRoutes.about}
     >
       <div className='space-y-10 md:flex md:flex-col'>
-          <About/>
+        <About />
       </div>
     </General>
   )

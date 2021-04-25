@@ -8,7 +8,9 @@ const Footer = () => {
         <div className='col-span-1'>
           <a href={pageRoutes.home}>{pageNames.home}</a>
         </div>
-        <div className='col-span-1'>{pageNames.about}</div>
+        <div className='col-span-1'>
+          <a href={pageRoutes.about}>{pageNames.about}</a>
+        </div>
         <div className='col-span-1'>{pageNames.blog}</div>
         <div className='col-span-1'>
           <a href={pageRoutes.help}>{pageNames.help}</a>
