@@ -73,7 +73,7 @@ const ChoiceForm = ({ data, setData, register, handleSubmit, reset }) => {
           </select>
         </Card>
 
-        {(data.type == 'online' || data.type == '') && (
+        {(data.type == 'online') && (
           <Card>
             <label htmlFor='online' className={labelClass}>
               Platform

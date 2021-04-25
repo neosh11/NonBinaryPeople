@@ -6,15 +6,14 @@ const Header = ({ selectedKey }: { selectedKey: navKeys }) => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   const getSelectedDesktop = (key: navKeys, disabled = false) => {
-    if(disabled)return 'bg-link-on text-link-on px-3 py-2 rounded-md text-sm font-medium' 
-
+    if (disabled) return 'bg-link-on text-link-on px-3 py-2 rounded-md text-sm font-medium'
 
     if (key === selectedKey) return 'bg-prim text-link-on px-3 py-2 rounded-md text-sm font-medium'
     return 'text-link-off bg-sec hover:bg-prim hover:text-link-on px-3 py-2 rounded-md text-sm font-medium'
   }
   const getSelectedMob = (key: navKeys) => {
-    if (key === selectedKey) return 'bg-prim text-link-on block px-3 py-2 rounded-md text-base font-medium'
-    return 'text-link-off hover:bg-sec hover:text-link-on block px-3 py-2 rounded-md text-base font-medium'
+    if (key === selectedKey) return 'bg-sec text-prim block px-3 py-2 rounded-md text-base font-medium'
+    return 'text-sec hover:bg-sec hover:text-prim block px-3 py-2 rounded-md text-base font-medium'
   }
 
   return (
@@ -22,7 +21,7 @@ const Header = ({ selectedKey }: { selectedKey: navKeys }) => {
       <div className='h-16 md:h-0' />
       <nav
         className={`${
-          menuOpen ? 'inset-0 z-40 bg-ter bg-opacity fixed opacity-75 shadow-md' : null
+          menuOpen ? 'inset-0 z-40 bg-ter bg-opacity fixed opacity-90 shadow-md' : null
         } bg-ter fixed md:relative shadow-md`}
       >
         <div className='px-4 sm:px-6 lg:px-8 '>
@@ -48,7 +47,7 @@ const Header = ({ selectedKey }: { selectedKey: navKeys }) => {
               </div>
             </div>
 
-            <div className='-mr-2 flex md:hidden'>
+            <div className='flex md:hidden'>
               {/* <!-- Mobile menu button --> */}
               <button
                 onClick={() => {
