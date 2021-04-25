@@ -1,5 +1,5 @@
-import Communities from '../../components/Help/Communities'
-import { navKeys } from '../../constants/PageDetails'
+import Communities from '../../components/PageComponents/Help/Communities'
+import { navKeys } from '../../lib/pageDetails'
 import General from '../../layouts/General'
 import { pageRoutes } from '../../lib/routes'
 

@@ -1,6 +1,6 @@
-import Card from '../../Card'
-import { ISupport } from '../../../data/support'
-import { CountryMap } from '../../../data/countries'
+import Card from '../../../Card'
+import { ISupport } from '../../../../data/support'
+import { CountryMap } from '../../../../data/countries'
 
 interface Props {
   support: ISupport

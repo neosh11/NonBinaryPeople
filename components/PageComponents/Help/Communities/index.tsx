@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { pageNames } from '../../../constants/PageDetails'
-import { communities, onlineCommunities, OnlineGroupMap } from '../../../data/communities'
-import { CountryMap } from '../../../data/countries'
-import Button from '../../Button'
-import Card from '../../Card'
+import { pageNames } from '../../../../lib/pageDetails'
+import { communities, onlineCommunities, OnlineGroupMap } from '../../../../data/communities'
+import { CountryMap } from '../../../../data/countries'
+import Button from '../../../Button'
+import Card from '../../../Card'
 import CommunityCard from './Cards/CommunityCard'
 import OnlineCommunityCard from './Cards/OnlineCommunityCard'
+import GetInTouchButton from '../../../Button/GetInTouchButton'
 
 interface DataProp {
   type: 'online' | '' | 'regional'
@@ -116,9 +117,7 @@ const Communities = () => {
           <h2>There are plenty of communities you can become a part of!</h2>
           <div className='md:space-x-4 md:space-y-0 space-y-4'>
             If you want to list your own community
-            <Button color='black' text={true}>
-              Get in touch!
-            </Button>
+            <GetInTouchButton/>
           </div>
         </div>
       </Card>

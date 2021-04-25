@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { pageNames } from '../../../constants/PageDetails'
-import { CountryMap } from '../../../data/countries'
-import { supportGroups } from '../../../data/support'
-import Button from '../../Button'
-import Card from '../../Card'
+import { pageNames } from '../../../../lib/pageDetails'
+import { CountryMap } from '../../../../data/countries'
+import { supportGroups } from '../../../../data/support'
+import Button from '../../../Button'
+import Card from '../../../Card'
 import SupportCard from './SupportCard'
+import GetInTouchButton from '../../../Button/GetInTouchButton'
 
 interface DataProp {
   location: number | ''
@@ -70,9 +71,8 @@ const Communities = () => {
           <h2>Find support available around you!</h2>
           <div className='md:space-x-4 md:space-y-0 space-y-4'>
             If you want to list your own support network!
-            <Button color='black' text={true}>
-              Get in touch!
-            </Button>
+            <GetInTouchButton/>
+
           </div>
         </div>
       </Card>

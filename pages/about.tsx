@@ -1,9 +1,9 @@
-import Intro from '../components/PageComponents/Home/Intro'
 import { navKeys } from '../lib/pageDetails'
 import General from '../layouts/General'
 import { pageRoutes } from '../lib/routes'
+import About from '../components/PageComponents/About'
 
-export default function Home() {
+export default function AboutPage() {
   return (
     <General
       title='Non Binary People Org'
@@ -12,7 +12,7 @@ export default function Home() {
       canonical={pageRoutes.home}
     >
       <div className='space-y-10 md:flex md:flex-col'>
-        <Intro />
+          <About/>
       </div>
     </General>
   )

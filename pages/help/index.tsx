@@ -1,5 +1,5 @@
 import Card from '../../components/Card'
-import { navKeys, pageNames } from '../../constants/PageDetails'
+import { navKeys, pageNames } from '../../lib/pageDetails'
 import General from '../../layouts/General'
 import { externalEducationLinks, pageRoutes } from '../../lib/routes'
 

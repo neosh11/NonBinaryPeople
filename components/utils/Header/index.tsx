@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { navKeys, pageNames } from '../../../constants/PageDetails'
+import { navKeys, pageNames } from '../../../lib/pageDetails'
 import { pageRoutes } from '../../../lib/routes'
 
 const Header = ({ selectedKey }: { selectedKey: navKeys }) => {
@@ -34,7 +34,7 @@ const Header = ({ selectedKey }: { selectedKey: navKeys }) => {
                   <a href={pageRoutes.home} className={getSelectedDesktop(navKeys.HOME)}>
                     {pageNames.home}
                   </a>
-                  <a href='#' className={getSelectedDesktop(navKeys.ABOUT, true)}>
+                  <a href={pageRoutes.about} className={getSelectedDesktop(navKeys.ABOUT)}>
                     {pageNames.about}
                   </a>
                   <a href='#' className={getSelectedDesktop(navKeys.BLOG, true)}>
@@ -90,7 +90,7 @@ const Header = ({ selectedKey }: { selectedKey: navKeys }) => {
             <a href={pageRoutes.home} className={getSelectedMob(navKeys.HOME)}>
               {pageNames.home}
             </a>
-            <a href='#' className={getSelectedMob(navKeys.ABOUT)}>
+            <a href={pageRoutes.about} className={getSelectedMob(navKeys.ABOUT)}>
               {pageNames.about}
             </a>
             <a href='#' className={getSelectedMob(navKeys.BLOG)}>

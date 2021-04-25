@@ -1,5 +1,5 @@
-import Support from '../../components/Help/Support'
-import { navKeys } from '../../constants/PageDetails'
+import Support from '../../components/PageComponents/Help/Support'
+import { navKeys } from '../../lib/pageDetails'
 import General from '../../layouts/General'
 import { pageRoutes } from '../../lib/routes'
 

@@ -2,7 +2,7 @@ import { ReactNode } from 'react'
 import Footer from '../../components/utils/Footer'
 import Header from '../../components/utils/Header'
 import SEOMeta from '../../components/utils/SEO'
-import { navKeys } from '../../constants/PageDetails'
+import { navKeys } from '../../lib/pageDetails'
 
 interface Props {
   children: ReactNode

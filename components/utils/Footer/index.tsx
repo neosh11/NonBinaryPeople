@@ -1,4 +1,4 @@
-import { pageNames } from '../../../constants/PageDetails'
+import { pageNames } from '../../../lib/pageDetails'
 import { pageRoutes } from '../../../lib/routes'
 
 const Footer = () => {
