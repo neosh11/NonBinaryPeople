@@ -15,3 +15,10 @@ export const externalContactLinks = {
   gitRepo: 'https://github.com/neosh11/NonBinaryPeople',
   email: 'mailto:does@not.existYet'
 }
+
+export const externalSocial = {
+  github: 'https://github.com/',
+  twitter: 'https://twitter.com/',
+  instagram: 'https://www.instagram.com/',
+  facebook: 'https://www.facebook.com/'
+}

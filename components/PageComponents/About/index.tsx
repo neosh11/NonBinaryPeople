@@ -17,6 +17,7 @@ const About = () => (
       </div>
     </Card>
     <Card>
+      <h2>Get Involved!</h2>
       <p>The website is managed voluntarily, if you would like to work on it, feel free to get in touch.</p>
 
       <p>
@@ -29,7 +30,7 @@ const About = () => (
 
     <Card>
       <div className='space-y-4'>
-        <h2>This website was made possible by:</h2>
+        <h2>Made possible by:</h2>
         <div>
           <h3 className={headClass}>Creators</h3>
           <ul className='list-disc list-inside'>

@@ -3,7 +3,10 @@ export interface IWebsitePerson {
   role?: string
   github?: string
   twitter?: string
-  website?: string
+  instagram?: string
+  email?: string
+  facebook?: string
+
 }
 
 const neo: IWebsitePerson = {
@@ -13,7 +16,11 @@ const neo: IWebsitePerson = {
 
 const you: IWebsitePerson = {
   name: 'you',
-  github: 'you'
+  github: 'you',
+  instagram: 'you',
+  twitter: 'you',
+  email: 'you@you.com',
+  facebook:'you'
 }
 
 export const creators: IWebsitePerson[] = [neo, you]
