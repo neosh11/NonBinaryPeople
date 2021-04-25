@@ -5,9 +5,7 @@ import { pageRoutes } from '../../../lib/routes'
 const Header = ({ selectedKey }: { selectedKey: navKeys }) => {
   const [menuOpen, setMenuOpen] = useState(false)
 
-  const getSelectedDesktop = (key: navKeys, disabled = false) => {
-    if (disabled) return 'bg-sec text-link-off px-3 py-2 rounded-md text-sm font-medium line-through'
-
+  const getSelectedDesktop = (key: navKeys) => {
     if (key === selectedKey) return 'bg-prim text-link-on px-3 py-2 rounded-md text-sm font-medium'
     return 'text-link-off bg-sec hover:bg-prim hover:text-link-on px-3 py-2 rounded-md text-sm font-medium'
   }
@@ -37,7 +35,7 @@ const Header = ({ selectedKey }: { selectedKey: navKeys }) => {
                   <a href={pageRoutes.about} className={getSelectedDesktop(navKeys.ABOUT)}>
                     {pageNames.about}
                   </a>
-                  <a href='#' className={getSelectedDesktop(navKeys.BLOG, true)}>
+                  <a href={pageRoutes.blog} className={getSelectedDesktop(navKeys.BLOG)}>
                     {pageNames.blog}
                   </a>
                   <a href={pageRoutes.help} className={getSelectedDesktop(navKeys.HELP)}>
@@ -93,7 +91,7 @@ const Header = ({ selectedKey }: { selectedKey: navKeys }) => {
             <a href={pageRoutes.about} className={getSelectedMob(navKeys.ABOUT)}>
               {pageNames.about}
             </a>
-            <a href='#' className={getSelectedMob(navKeys.BLOG)}>
+            <a href={pageRoutes.blog} className={getSelectedMob(navKeys.BLOG)}>
               {pageNames.blog}
             </a>
             <a href={pageRoutes.help} className={getSelectedMob(navKeys.HELP)}>

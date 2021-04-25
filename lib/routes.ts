@@ -1,6 +1,7 @@
 export const pageRoutes = {
   about: '/about',
   home: '/',
+  blog: '/blog',
   help: '/help',
   helpCommunities: '/help/communities',
   helpSupport: '/help/helpSupport'
