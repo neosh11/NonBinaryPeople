@@ -38,7 +38,7 @@ module.exports = {
     fontFamily: {
       sans: ['Lato', 'sans-serif'],
       serif: ['Montserrat', 'serif'],
-      bubbly: ['Lobster', 'sans-serif']
+      bubbly: ['Open+Sans', 'sans-serif']
     },
     extend: {
       width: {
@@ -49,5 +49,5 @@ module.exports = {
   variants: {
     extend: {}
   },
-  plugins: []
+  plugins: [require('@tailwindcss/forms')]
 }

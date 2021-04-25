@@ -15,7 +15,6 @@ class MyDocument extends Document {
           <meta property='og:type' content='website' />
           <meta property='og:site_name' content={siteName} />
           <meta name='twitter:creator' content={twitterHandle} />
-
           <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' />
         </Head>
 
