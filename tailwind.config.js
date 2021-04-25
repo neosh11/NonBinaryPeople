@@ -37,7 +37,8 @@ module.exports = {
     },
     fontFamily: {
       sans: ['Lato', 'sans-serif'],
-      serif: ['Montserrat', 'serif']
+      serif: ['Montserrat', 'serif'],
+      bubbly: ['Lobster', 'sans-serif']
     },
     extend: {
       width: {

@@ -1,3 +1,4 @@
+import Card from '../../components/Card'
 import { navKeys, pageNames } from '../../constants/PageDetails'
 import General from '../../layouts/General'
 import { pageRoutes } from '../../lib/routes'
@@ -13,9 +14,32 @@ export default function Home() {
     >
       <div className='space-y-10 md:flex md:flex-col'>
         <h1>Helpful Links</h1>
-        <a className={buttonClass} href={pageRoutes.helpCommunities}>
-          {pageNames.communities}
-        </a>
+        <Card>
+          <div className='md:flex md:flex-col space-y-4 md:items-center'>
+            <h2>Communities!</h2>
+            <a className={buttonClass} href={pageRoutes.helpCommunities}>
+              {pageNames.communities}
+            </a>
+          </div>
+        </Card>
+
+        <Card>
+          <div className='md:flex md:flex-col space-y-4 md:items-center'>
+            <h2>Seeking help!</h2>
+            <a className={buttonClass} href='#'>
+              Looking for mental health support
+            </a>
+          </div>
+        </Card>
+
+        <Card>
+          <div className='md:flex md:flex-col space-y-4 md:items-center'>
+            <h2>Get Educated!</h2>
+            <a className={buttonClass} href='#'>
+              Wiki
+            </a>
+          </div>
+        </Card>
       </div>
     </General>
   )

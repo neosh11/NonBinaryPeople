@@ -2,10 +2,10 @@
 
 @layer base {
   h1 {
-    @apply text-2xl font-bold;
+    @apply md:text-4xl text-2xl font-bold font-serif tracking-wide md:antialiased;
   }
   h2 {
-    @apply text-xl font-semibold;
+    @apply text-xl font-medium;
   }
   h3 {
     @apply text-lg;
@@ -20,7 +20,7 @@
 
   html,
   body {
-    @apply bg-prim text-tex-prim tracking-wide leading-loose;
+    @apply bg-prim text-tex-prim tracking-wide leading-loose font-bubbly font-normal;
   }
 
   input, textarea, select{
