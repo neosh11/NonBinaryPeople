@@ -1,4 +1,4 @@
-import { contentFinders, creators, maintainers } from '../../../data/websiteManagers'
+import { contentFinders, creators, maintainers, testers } from '../../../data/websiteManagers'
 import { externalContactLinks } from '../../../lib/routes'
 import GetInTouchButton from '../../Button/GetInTouchButton'
 import Card from '../../Card'
@@ -52,6 +52,15 @@ const About = () => (
           <ul className='list-disc list-inside'>
             {contentFinders.map((x, i) => (
               <HelperInfo key={'con' + i} person={x} />
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h3 className={headClass}>Testers</h3>
+          <ul className='list-disc list-inside'>
+            {testers.map((x, i) => (
+              <HelperInfo key={'tes' + i} person={x} />
             ))}
           </ul>
         </div>

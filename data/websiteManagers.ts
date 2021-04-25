@@ -28,3 +28,6 @@ export const creators: IWebsitePerson[] = [neo, you]
 export const maintainers: IWebsitePerson[] = [neo]
 
 export const contentFinders: IWebsitePerson[] = [neo]
+
+export const testers: IWebsitePerson[] = [you]
+
