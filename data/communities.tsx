@@ -29,12 +29,15 @@ export const OnlineGroupMap = new Map<number, string>([
 
 // Country
 enum Country {
+  GLOBAL,
   AUSTRALIA,
   USA,
   CANADA
 }
 
 export const CountryMap = new Map<number, string>([
+  [Country.GLOBAL, 'Global'],
+
   [Country.AUSTRALIA, 'Australia'],
   [Country.USA, 'United States of America'],
   [Country.CANADA, 'Canada']
@@ -55,18 +58,21 @@ export const onlineCommunities: IOCommunity[] = [
   {
     name: 'r/Agender',
     group: OnlineGroup.REDDIT,
+    location: Country.GLOBAL,
     url: 'https://www.reddit.com/r/agender',
     info: 'test information'
   },
   {
     name: 'r/Androgyny',
     group: OnlineGroup.REDDIT,
+    location: Country.GLOBAL,
     url: 'https://www.reddit.com/r/androgyny',
     info: 'test information'
   },
   {
     name: 'r/Boyflux',
     group: OnlineGroup.REDDIT,
+    location: Country.GLOBAL,
     url: 'https://www.reddit.com/r/Boyflux',
     info: 'test information'
   },
