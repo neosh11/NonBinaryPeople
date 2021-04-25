@@ -1,3 +1,5 @@
+import { Country } from "./countries"
+
 export interface ICommunity {
   name: string
   country: Country
@@ -25,22 +27,6 @@ export const OnlineGroupMap = new Map<number, string>([
   [OnlineGroup.REDDIT, 'Reddit'],
   [OnlineGroup.DISCORD, 'Discord'],
   [OnlineGroup.FACEBOOK, 'Facebook']
-])
-
-// Country
-enum Country {
-  GLOBAL,
-  AUSTRALIA,
-  USA,
-  CANADA
-}
-
-export const CountryMap = new Map<number, string>([
-  [Country.GLOBAL, 'Global'],
-
-  [Country.AUSTRALIA, 'Australia'],
-  [Country.USA, 'United States of America'],
-  [Country.CANADA, 'Canada']
 ])
 
 export const communities: ICommunity[] = [

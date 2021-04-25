@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { pageNames } from '../../../constants/PageDetails'
-import { communities, CountryMap, onlineCommunities, OnlineGroupMap } from '../../../data/communities'
+import { communities, onlineCommunities, OnlineGroupMap } from '../../../data/communities'
+import { CountryMap } from '../../../data/countries'
 import Button from '../../Button'
 import Card from '../../Card'
 import CommunityCard from './Cards/CommunityCard'
@@ -30,8 +31,6 @@ const ChoiceForm = ({ data, setData, register, handleSubmit, reset }) => {
       online: ''
     })
     reset()
-    // todo reset data
-    console.log('re')
   }
   const selectClass =
     'mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md'

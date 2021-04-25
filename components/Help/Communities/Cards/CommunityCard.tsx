@@ -1,4 +1,5 @@
-import { ICommunity, CountryMap } from '../../../../data/communities'
+import { ICommunity} from '../../../../data/communities'
+import { CountryMap } from '../../../../data/countries'
 import Card from '../../../Card'
 
 interface Props {
