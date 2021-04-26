@@ -1,5 +1,13 @@
 module.exports = {
-  purge: ['./components/**/*.tsx', './pages/**/*.tsx', './pages/*.tsx', './layouts/**/*.tsx'],
+  purge: [
+    './components/*.tsx',
+    './components/**/*.tsx',
+    './components/**/**/*.tsx',
+    './components/**/**/**/*.tsx',
+    './pages/**/*.tsx',
+    './pages/*.tsx',
+    './layouts/**/*.tsx'
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
