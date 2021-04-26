@@ -10,7 +10,7 @@ export enum Country {
 export const CountryMap = new Map<number, string>([
   [Country.GLOBAL, 'Global'],
   [Country.AUSTRALIA, 'Australia'],
-  [Country.USA, 'United States of America'],
   [Country.CANADA, 'Canada'],
-  [Country.UK, 'United Kingdom']
+  [Country.UK, 'United Kingdom'],
+  [Country.USA, 'United States of America']
 ])

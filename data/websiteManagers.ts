@@ -22,7 +22,7 @@ const you: IWebsitePerson = {
   facebook: 'you'
 }
 
-export const creators: IWebsitePerson[] = [neo, you]
+export const creators: IWebsitePerson[] = [neo]
 
 export const maintainers: IWebsitePerson[] = [you]
 
