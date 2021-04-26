@@ -1,4 +1,4 @@
-import { Country } from "./countries"
+import { Country } from './countries'
 
 export interface ICommunity {
   name: string
@@ -31,11 +31,19 @@ export const OnlineGroupMap = new Map<number, string>([
 
 export const communities: ICommunity[] = [
   {
-    name: 'TEST',
-    country: Country.AUSTRALIA,
-    city: 'Sydney',
-    url: 'http://abc.abc',
-    info: 'test information'
+    name: 'Non-Binary Glasgow',
+    country: Country.UK,
+    city: 'Glasgow',
+    url: 'https://www.facebook.com/groups/905194806188423/',
+    info: 'A group for non-binary people in Glasgow to be chill and have a cool rad time.'
+  },
+  {
+    name: 'Non-Binary Glasgow',
+    country: Country.UK,
+    city: 'Scotland',
+    url: 'https://www.facebook.com/groups/nonbinaryscotland/',
+    info:
+      'provides support and social opportunities for people who either self-identify as outwith the gender binary of male/man and female/woman or are questioning whether they might be.'
   }
 ]
 
@@ -46,21 +54,22 @@ export const onlineCommunities: IOCommunity[] = [
     group: OnlineGroup.REDDIT,
     location: Country.GLOBAL,
     url: 'https://www.reddit.com/r/agender',
-    info: 'test information'
+    info: 'A subreddit for agender, genderless and neutrois people.'
   },
   {
     name: 'r/Androgyny',
     group: OnlineGroup.REDDIT,
     location: Country.GLOBAL,
     url: 'https://www.reddit.com/r/androgyny',
-    info: 'test information'
+    info: 'Androgyny is a non-binary gender identity in between male and female.'
   },
   {
     name: 'r/Boyflux',
     group: OnlineGroup.REDDIT,
     location: Country.GLOBAL,
     url: 'https://www.reddit.com/r/Boyflux',
-    info: 'test information'
+    info:
+      'Discussion, memes, and a safe place for those who identify as "boyflux", meaning "experiencing a connection to the male gender with varying intensity"'
   },
 
   // Facebook
