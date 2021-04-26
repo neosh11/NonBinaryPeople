@@ -27,8 +27,22 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Data Contribution
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Most of the data on the website is currently located in the data folder.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### communities.ts
+
+If you know any communities which belong on this page, feel free to list them.
+
+### support.ts
+
+If you know any support resources which should belong on this page, feel free to list them.
+
+### countries.ts
+
+If you're adding new countries in support/communities, please add them to this
+
+### websiteManagers.ts
+
+If you have contributed in some way, feel free to add your contributions.

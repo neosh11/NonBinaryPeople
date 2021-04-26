@@ -6,7 +6,6 @@ export interface IWebsitePerson {
   instagram?: string
   email?: string
   facebook?: string
-
 }
 
 const neo: IWebsitePerson = {
@@ -20,14 +19,13 @@ const you: IWebsitePerson = {
   instagram: 'you',
   twitter: 'you',
   email: 'you@you.com',
-  facebook:'you'
+  facebook: 'you'
 }
 
 export const creators: IWebsitePerson[] = [neo, you]
 
-export const maintainers: IWebsitePerson[] = [neo]
+export const maintainers: IWebsitePerson[] = [you]
 
-export const contentFinders: IWebsitePerson[] = [neo]
+export const contentFinders: IWebsitePerson[] = [you]
 
 export const testers: IWebsitePerson[] = [you]
-
