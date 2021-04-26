@@ -69,10 +69,21 @@ const Communities = () => {
         <div className='md:flex md:flex-col space-y-4 md:items-center'>
           <h1>{pageNames.support}</h1>
           <h2>Find support available around you!</h2>
+          <p>
+            We know that sometimes things can get difficult or complicated - and it can be difficult for everyone to
+            find the support they might need at a times like these.
+            <br />
+            So we have decided to compile a list of support links which
+            <br />
+            If you know of any communities which belong here, please let us know{' '}
+            <span role='img' aria-labelledby='heart'>
+              ❤️
+            </span>
+            !
+          </p>
           <div className='md:space-x-4 md:space-y-0 space-y-4'>
             If you want to list your own support network!
-            <GetInTouchButton/>
-
+            <GetInTouchButton />
           </div>
         </div>
       </Card>

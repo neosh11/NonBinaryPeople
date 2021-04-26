@@ -73,7 +73,7 @@ const ChoiceForm = ({ data, setData, register, handleSubmit, reset }) => {
           </select>
         </Card>
 
-        {(data.type == 'online') && (
+        {data.type == 'online' && (
           <Card>
             <label htmlFor='online' className={labelClass}>
               Platform
@@ -115,9 +115,24 @@ const Communities = () => {
         <div className='md:flex md:flex-col space-y-4 md:items-center'>
           <h1>{pageNames.communities}</h1>
           <h2>There are plenty of communities you can become a part of!</h2>
+          <p>
+            We know it can be difficult sometimes when you don&apos;t know enough people who are like you{' '}
+            <span role='img' aria-labelledby='heart'>
+              ❤️
+            </span>
+            <br />
+            So we have decided to compile a list of communities which are non-binary focused or related which you can
+            become a part of.
+            <br />
+            If you know of any communities which belong here, please let us know{' '}
+            <span role='img' aria-labelledby='heart'>
+              😄
+            </span>
+            !
+          </p>
           <div className='md:space-x-4 md:space-y-0 space-y-4'>
             If you want to list your own community
-            <GetInTouchButton/>
+            <GetInTouchButton />
           </div>
         </div>
       </Card>
