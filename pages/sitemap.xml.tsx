@@ -12,27 +12,27 @@ const routes: SiteMapRoute[] = [
   {
     name: '/',
     priority: '1.0',
-    changeFreq: 'monthly'
+    changeFreq: 'daily'
   },
   {
     name: '/about',
     priority: '0.5',
-    changeFreq: 'monthly'
+    changeFreq: 'daily'
   },
   {
     name: '/help',
     priority: '0.8',
-    changeFreq: 'monthly'
+    changeFreq: 'daily'
   },
   {
     name: '/help/communities',
     priority: '0.9',
-    changeFreq: 'monthly'
+    changeFreq: 'daily'
   },
   {
     name: '/help/support',
     priority: '0.9',
-    changeFreq: 'monthly'
+    changeFreq: 'daily'
   }
 ]
 
