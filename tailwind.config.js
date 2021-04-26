@@ -1,10 +1,5 @@
 module.exports = {
-  purge: [
-    './components/**/*.tsx',
-    './pages/**/*.tsx',
-    './pages/*.tsx',
-    './layouts/**/*.tsx'
-  ],
+  purge: ['./components/**/*.tsx', './pages/**/*.tsx', './pages/*.tsx', './layouts/**/*.tsx'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
@@ -40,7 +35,7 @@ module.exports = {
     },
     extend: {
       width: {
-        240: '50rem'
+        240: '40rem'
       }
     }
   },

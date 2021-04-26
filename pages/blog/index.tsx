@@ -1,3 +1,4 @@
+import Blog from '../../components/PageComponents/Blog'
 import General from '../../layouts/General'
 import { navKeys } from '../../lib/pageDetails'
 import { pageRoutes } from '../../lib/routes'
@@ -10,9 +11,8 @@ export default function BlogPage() {
       description="Hi we're here to help people get a better understanding of non-binary people"
       canonical={pageRoutes.blog}
     >
-      <div className='space-y-10 md:flex md:flex-col'>
-        This page is a WIP.
-        <br />
+      <div className='md:w-240 space-y-10 md:flex md:flex-col'>
+        <Blog />
       </div>
     </General>
   )

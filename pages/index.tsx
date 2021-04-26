@@ -11,7 +11,7 @@ export default function Home() {
       description="Hi we're here to help people get a better understanding of non-binary people"
       canonical={pageRoutes.home}
     >
-      <div className='space-y-10 md:flex md:flex-col'>
+      <div className='md:w-240 space-y-10 md:flex md:flex-col'>
         <Intro />
       </div>
     </General>

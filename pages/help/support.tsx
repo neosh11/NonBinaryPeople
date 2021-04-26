@@ -11,7 +11,7 @@ export default function SupportPage() {
       description='Find support!'
       canonical={pageRoutes.helpSupport}
     >
-      <div className='space-y-10 md:flex md:flex-col'>
+      <div className='md:w-240 space-y-10 md:flex md:flex-col'>
         <Support />
       </div>
     </General>

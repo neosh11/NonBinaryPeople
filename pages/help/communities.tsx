@@ -11,7 +11,7 @@ export default function CommunitiesPage() {
       description='Find a community new you!'
       canonical={pageRoutes.helpCommunities}
     >
-      <div className='space-y-10 md:flex md:flex-col'>
+      <div className='md:w-240 space-y-10 md:flex md:flex-col'>
         <Communities />
       </div>
     </General>

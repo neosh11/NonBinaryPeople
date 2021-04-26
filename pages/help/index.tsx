@@ -12,7 +12,7 @@ export default function Home() {
       description='Find a community new you!'
       canonical={pageRoutes.help}
     >
-      <div className='space-y-10 md:flex md:flex-col md:items-center'>
+      <div className='md:w-240 space-y-10 md:flex md:flex-col md:items-center'>
         <h1>Helpful Links</h1>
         <Card>
           <div className='md:flex md:flex-col space-y-4 md:items-center'>
