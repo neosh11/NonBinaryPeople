@@ -1,0 +1,1 @@
+export const imgNBFlag = "https://static.miraheze.org/nonbinarywiki/c/c0/Nonbinary.png"

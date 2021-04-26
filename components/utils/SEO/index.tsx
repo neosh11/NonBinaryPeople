@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import { imgNBFlag } from '../../../lib/imageLinks'
 interface Props {
   title: string
   description: string
@@ -23,8 +23,8 @@ const SEOMeta = ({ title, description, canonical, iconHref = '/favicon.ico' }: P
     <link rel='icon' href={iconHref} />
     <link rel='apple-touch-icon' href={iconHref} />
 
-    <meta property='og:image' content='' />
-    <meta name='twitter:image' content='' />
+    <meta property='og:image' content={imgNBFlag} />
+    <meta name='twitter:image' content={imgNBFlag} />
 
     <link rel='canonical' href={canonical} />
   </Head>
