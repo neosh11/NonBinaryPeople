@@ -6,9 +6,9 @@ import About from '../components/PageComponents/About'
 export default function AboutPage() {
   return (
     <General
-      title='Non Binary People Org'
+      title='About Non Binary People Org'
       selectedNavKey={navKeys.ABOUT}
-      description="Hi we're here to help people get a better understanding of non-binary people"
+      description="Our mission and our goal"
       canonical={pageRoutes.about}
     >
       <div className='md:w-240 space-y-10 md:flex md:flex-col'>

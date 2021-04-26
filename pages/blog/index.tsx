@@ -6,9 +6,9 @@ import { pageRoutes } from '../../lib/routes'
 export default function BlogPage() {
   return (
     <General
-      title='Non Binary People Org'
+      title='Non Binary People Blog'
       selectedNavKey={navKeys.BLOG}
-      description="Hi we're here to help people get a better understanding of non-binary people"
+      description="Stories from our people"
       canonical={pageRoutes.blog}
     >
       <div className='md:w-240 space-y-10 md:flex md:flex-col'>

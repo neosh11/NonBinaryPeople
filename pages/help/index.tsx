@@ -7,9 +7,9 @@ const buttonClass = 'text-link-off bg-sec hover:bg-prim hover:text-link-on px-3 
 export default function Home() {
   return (
     <General
-      title='Non Binary People Org'
+      title='Help for Non-Binary People'
       selectedNavKey={navKeys.HELP}
-      description='Find a community new you!'
+      description='Check out the following to get involved or find support!'
       canonical={pageRoutes.help}
     >
       <div className='md:w-240 space-y-10 md:flex md:flex-col md:items-center'>
