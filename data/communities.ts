@@ -38,7 +38,7 @@ export const communities: ICommunity[] = [
     info: 'A group for non-binary people in Glasgow to be chill and have a cool rad time.'
   },
   {
-    name: 'Non-Binary Glasgow',
+    name: 'Non-Binary Scotland',
     country: Country.UK,
     city: 'Scotland',
     url: 'https://www.facebook.com/groups/nonbinaryscotland/',
@@ -85,7 +85,7 @@ export const onlineCommunities: IOCommunity[] = [
     name: 'Personnes non-binaires du Québec',
     group: OnlineGroup.FACEBOOK,
     location: Country.CANADA,
-    url: 'https://www.facebook.com/groups/999718613439135/',
+    url: 'https://www.facebook.com/groups/1636047260006794/',
     info: ''
   }
 ]
