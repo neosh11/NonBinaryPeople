@@ -20,13 +20,15 @@ export interface IOCommunity {
 enum OnlineGroup {
   REDDIT,
   DISCORD,
-  FACEBOOK
+  FACEBOOK,
+  WIKI
 }
 
 export const OnlineGroupMap = new Map<number, string>([
   [OnlineGroup.REDDIT, 'Reddit'],
   [OnlineGroup.DISCORD, 'Discord'],
-  [OnlineGroup.FACEBOOK, 'Facebook']
+  [OnlineGroup.FACEBOOK, 'Facebook'],
+  [OnlineGroup.WIKI, 'Wiki']
 ])
 
 export const communities: ICommunity[] = [
@@ -87,5 +89,30 @@ export const onlineCommunities: IOCommunity[] = [
     location: Country.CANADA,
     url: 'https://www.facebook.com/groups/1636047260006794/',
     info: ''
+  }
+]
+
+export const informationCommunities: IOCommunity[] = [
+  // Wikis
+  {
+    name: 'Non-Binary Wiki',
+    group: OnlineGroup.WIKI,
+    location: Country.GLOBAL,
+    url: 'https://nonbinary.wiki/wiki/Main_Page',
+    info: 'The wiki dedicated to nonbinary gender identities'
+  },
+  {
+    name: 'Nichtbinär-Wiki',
+    group: OnlineGroup.WIKI,
+    location: Country.GLOBAL,
+    url: 'https://nibi.space/',
+    info: 'a wiki about nonbinary gender identities written in the German language.'
+  },
+  {
+    name: 'Nonbinary Database',
+    group: OnlineGroup.WIKI,
+    location: Country.GLOBAL,
+    url: 'https://data.nonbinary.wiki/wiki/Main_Page',
+    info: 'The NBDb is a compilation of concepts relevant to nonbinary identities'
   }
 ]

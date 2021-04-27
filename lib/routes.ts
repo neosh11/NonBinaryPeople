@@ -4,7 +4,9 @@ export const pageRoutes = {
   blog: '/blog',
   help: '/help',
   helpCommunities: '/help/communities',
-  helpSupport: '/help/helpSupport'
+  helpSupport: '/help/support',
+  helpKnowledge: '/help/knowledge'
+
 }
 
 export const externalEducationLinks = {

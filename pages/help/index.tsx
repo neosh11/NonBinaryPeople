@@ -1,7 +1,7 @@
 import Card from '../../components/Card'
 import { navKeys, pageNames } from '../../lib/pageDetails'
 import General from '../../layouts/General'
-import { externalEducationLinks, pageRoutes } from '../../lib/routes'
+import { pageRoutes } from '../../lib/routes'
 
 const buttonClass = 'text-link-off bg-sec hover:bg-prim hover:text-link-on px-3 py-2 rounded-md text-sm font-medium'
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
         <Card>
           <div className='md:flex md:flex-col space-y-4 md:items-center'>
             <h2>Seeking help!</h2>
-            <a className={buttonClass} href='/help/support'>
+            <a className={buttonClass} href={pageRoutes.helpSupport}>
               {pageNames.support}
             </a>
           </div>
@@ -35,8 +35,8 @@ export default function Home() {
         <Card>
           <div className='md:flex md:flex-col space-y-4 md:items-center'>
             <h2>Get Educated!</h2>
-            <a className={buttonClass} href={externalEducationLinks.wiki}>
-              Wiki
+            <a className={buttonClass} href={pageRoutes.helpKnowledge}>
+              {pageNames.knowledge}
             </a>
           </div>
         </Card>

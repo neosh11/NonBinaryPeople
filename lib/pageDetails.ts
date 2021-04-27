@@ -4,7 +4,8 @@ export const pageNames = {
   blog: 'Blog',
   help: 'Helpful Links',
   communities: 'Find a community!',
-  support: 'Find support!'
+  support: 'Find support!',
+  knowledge: 'Find information!'
 }
 
 export enum navKeys {

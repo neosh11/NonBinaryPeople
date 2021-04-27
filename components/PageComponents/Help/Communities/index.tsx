@@ -5,8 +5,8 @@ import { communities, onlineCommunities, OnlineGroupMap } from '../../../../data
 import { CountryMap } from '../../../../data/countries'
 import Button from '../../../Button'
 import Card from '../../../Card'
-import CommunityCard from './Cards/CommunityCard'
-import OnlineCommunityCard from './Cards/OnlineCommunityCard'
+import CommunityCard from '../Cards/CommunityCard'
+import OnlineCommunityCard from '../Cards/OnlineCommunityCard'
 import GetInTouchButton from '../../../Button/GetInTouchButton'
 
 interface DataProp {

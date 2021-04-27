@@ -33,6 +33,11 @@ const routes: SiteMapRoute[] = [
     name: '/help/support',
     priority: '0.9',
     changeFreq: 'daily'
+  },
+  {
+    name: '/help/knowledge',
+    priority: '0.9',
+    changeFreq: 'daily'
   }
 ]
 

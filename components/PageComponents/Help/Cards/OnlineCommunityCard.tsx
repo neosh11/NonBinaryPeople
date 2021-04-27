@@ -1,5 +1,5 @@
-import { IOCommunity, OnlineGroupMap } from '../../../../../data/communities'
-import Card from '../../../../Card'
+import { IOCommunity, OnlineGroupMap } from '../../../../data/communities'
+import Card from '../../../Card'
 
 interface Props {
   community: IOCommunity

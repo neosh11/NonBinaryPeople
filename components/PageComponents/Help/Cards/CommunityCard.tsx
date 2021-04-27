@@ -1,6 +1,6 @@
-import { ICommunity} from '../../../../../data/communities'
-import { CountryMap } from '../../../../../data/countries'
-import Card from '../../../../Card'
+import { ICommunity} from '../../../../data/communities'
+import { CountryMap } from '../../../../data/countries'
+import Card from '../../../Card'
 
 interface Props {
   community: ICommunity
