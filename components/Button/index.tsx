@@ -1,7 +1,7 @@
 import { FC, MouseEventHandler } from 'react'
 import Link from 'next/link'
 interface ButtonProps {
-  color?: 'blue' | 'black'
+  color?: 'blue' | 'black' | 'purple'
   type?: 'button' | 'submit' | 'reset'
   block?: boolean
   text?: boolean
@@ -15,9 +15,10 @@ const Button: FC<ButtonProps> = ({ block, color = 'blue', text = false, loading 
   let btnClass
   if (color === 'blue') btnClass = 'btn-large bg-blue focus:ring-white'
   else if (color === 'black') btnClass = 'btn-large bg-black focus:ring-white'
+  else if (color === 'purple') btnClass = 'text-link-off bg-sec hover:bg-prim hover:text-link-on rounded-md'
   // default class
   const classes =
-    ' w-full px-6 py-2 rounded-lg hover:ring-1 hover:ring-opacity-40 ring-offset-2 focus:ring-1 focus:ring-opacity-40'
+    ' min-w-but w-full px-6 py-2 rounded-lg hover:ring-1 hover:ring-opacity-40 ring-offset-2 focus:ring-1 focus:ring-opacity-40'
 
   // if type is block
   const blockClass = block ? 'w-full' : ''

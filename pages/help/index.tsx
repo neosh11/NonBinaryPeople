@@ -2,8 +2,8 @@ import Card from '../../components/Card'
 import { navKeys, pageNames } from '../../lib/pageDetails'
 import General from '../../layouts/General'
 import { pageRoutes } from '../../lib/routes'
+import Button from '../../components/Button'
 
-const buttonClass = 'text-link-off bg-sec hover:bg-prim hover:text-link-on px-3 py-2 rounded-md text-sm font-medium'
 export default function Home() {
   return (
     <General
@@ -17,27 +17,27 @@ export default function Home() {
         <Card>
           <div className='md:flex md:flex-col space-y-4 md:items-center'>
             <h2>{pageNames.communities}</h2>
-            <a className={buttonClass} href={pageRoutes.helpCommunities}>
-              {pageNames.communities}
-            </a>
+            <Button color='purple' href={pageRoutes.helpCommunities}>
+              {pageNames.communities}{' '}
+            </Button>
           </div>
         </Card>
 
         <Card>
           <div className='md:flex md:flex-col space-y-4 md:items-center'>
             <h2>Seeking help!</h2>
-            <a className={buttonClass} href={pageRoutes.helpSupport}>
+            <Button color='purple' href={pageRoutes.helpSupport}>
               {pageNames.support}
-            </a>
+            </Button>
           </div>
         </Card>
 
         <Card>
           <div className='md:flex md:flex-col space-y-4 md:items-center'>
             <h2>Get Educated!</h2>
-            <a className={buttonClass} href={pageRoutes.helpKnowledge}>
+            <Button color='purple' href={pageRoutes.helpKnowledge}>
               {pageNames.knowledge}
-            </a>
+            </Button>
           </div>
         </Card>
       </div>

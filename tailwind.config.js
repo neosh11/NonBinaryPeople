@@ -49,6 +49,9 @@ module.exports = {
     extend: {
       width: {
         240: '40rem'
+      },
+      minWidth: {
+        'but': '15rem'
       }
     }
   },
