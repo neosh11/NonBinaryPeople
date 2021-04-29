@@ -1,12 +1,17 @@
 module.exports = {
   purge: [
     './components/*.tsx',
-    './components/**/*.tsx',
-    './components/**/**/*.tsx',
-    './components/**/**/**/*.tsx',
-    './pages/**/*.tsx',
     './pages/*.tsx',
-    './layouts/**/*.tsx'
+
+    './components/**/*.tsx',
+    './pages/**/*.tsx',
+    './layouts/**/*.tsx',
+
+    './components/**/**/*.tsx',
+
+    './components/**/**/**/*.tsx',
+
+    './components/**/**/**/**/*.tsx'
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
