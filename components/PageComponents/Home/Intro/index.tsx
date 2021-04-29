@@ -12,7 +12,7 @@ const Intro = () => (
         <h2>
           We&apos;re here to help raise awareness and support for non-binary people. <Emoji type={EmojiType.HEART} />{' '}
         </h2>
-        <div className='md:space-x-4 md:flex md:space-y-0 space-y-4'>
+        <div className='md:gap-4 md:space-y-0 space-y-4 grid md:grid-cols-2'>
           <Button color='blue' text={true} href={pageRoutes.about}>
             About us!
           </Button>

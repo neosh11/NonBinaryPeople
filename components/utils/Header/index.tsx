@@ -6,8 +6,8 @@ const Header = ({ selectedKey }: { selectedKey: navKeys }) => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   const getSelectedDesktop = (key: navKeys) => {
-    if (key === selectedKey) return 'bg-prim text-link-on px-3 py-2 rounded-md text-sm font-medium'
-    return 'text-link-off bg-sec hover:bg-prim hover:text-link-on px-3 py-2 rounded-md text-sm font-medium'
+    if (key === selectedKey) return 'bg-prim text-link-on px-3 py-2 rounded-md text-sm font-medium text-center'
+    return 'text-link-off bg-sec hover:bg-prim hover:text-link-on px-3 py-2 rounded-md text-sm font-medium text-center'
   }
   const getSelectedMob = (key: navKeys) => {
     if (key === selectedKey) return 'bg-sec text-prim block px-3 py-2 rounded-md text-base font-medium'
@@ -27,7 +27,7 @@ const Header = ({ selectedKey }: { selectedKey: navKeys }) => {
           <div className='h-16 grid md:justify-items-center'>
             <div className='flex items-center'>
               <div className='hidden md:block'>
-                <div className='space-x-4 '>
+                <div className='grid grid-cols-4 gap-4'>
                   {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
                   <a href={pageRoutes.home} className={getSelectedDesktop(navKeys.HOME)}>
                     {pageNames.home}
