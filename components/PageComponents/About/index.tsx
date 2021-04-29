@@ -37,7 +37,7 @@ const About = () => (
         <h2>Made possible by:</h2>
         <div>
           <h3 className={headClass}>Creators</h3>
-          <ul className='list-disc list-inside'>
+          <ul className='list-inside'>
             {creators.map((x, i) => (
               <HelperInfo key={'cr' + i} person={x} />
             ))}
@@ -45,7 +45,7 @@ const About = () => (
         </div>
         <div>
           <h3 className={headClass}>Maintainers</h3>
-          <ul className='list-disc list-inside'>
+          <ul className='list-inside'>
             {maintainers.map((x, i) => (
               <HelperInfo key={'main' + i} person={x} />
             ))}
@@ -53,7 +53,7 @@ const About = () => (
         </div>
         <div>
           <h3 className={headClass}>Content Providers</h3>
-          <ul className='list-disc list-inside'>
+          <ul className='list-inside'>
             {contentFinders.map((x, i) => (
               <HelperInfo key={'con' + i} person={x} />
             ))}
@@ -62,7 +62,7 @@ const About = () => (
 
         <div>
           <h3 className={headClass}>Testers</h3>
-          <ul className='list-disc list-inside'>
+          <ul className='list-inside'>
             {testers.map((x, i) => (
               <HelperInfo key={'tes' + i} person={x} />
             ))}
