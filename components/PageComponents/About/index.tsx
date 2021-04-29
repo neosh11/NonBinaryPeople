@@ -2,6 +2,7 @@ import { contentFinders, creators, maintainers, testers } from '../../../data/we
 import { externalContactLinks } from '../../../lib/routes'
 import GetInTouchButton from '../../Button/GetInTouchButton'
 import Card from '../../Card'
+import Emoji, { EmojiType } from '../../Emoji'
 import HelperInfo from './HelperInfo'
 
 const headClass = 'font-bold'
@@ -10,7 +11,10 @@ const About = () => (
     <Card>
       <div className='md:flex md:flex-col space-y-4 md:items-center'>
         <h1>About Non-Binary People Org</h1>
-        <h2>This site was created to help non-binary people find resources, help and support</h2>
+        <h2>
+          This site was created to help non-binary people find resources, help and support!{' '}
+          <Emoji type={EmojiType.HEART} />
+        </h2>
         <div className='md:space-x-4 md:flex md:space-y-0 space-y-4'>
           <GetInTouchButton />
         </div>
@@ -18,11 +22,11 @@ const About = () => (
     </Card>
     <Card>
       <h2>Get Involved!</h2>
-      <p>The website is managed voluntarily, if you would like to work on it, feel free to get in touch.</p>
+      <p>The website is managed voluntarily and any support will be appreciated!</p>
 
       <p>
-        If you would like to make suggestions, you can either <a href={externalContactLinks.email}>contact us</a> or
-        create a PR <a href={externalContactLinks.gitRepo}>here</a>
+        If you would like to make suggestions, you can either <a href={externalContactLinks.email}>contact us</a> or{' '}
+        <a href={externalContactLinks.gitRepo}>create a PR</a>
       </p>
     </Card>
 

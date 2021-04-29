@@ -6,6 +6,7 @@ import Button from '../../../Button'
 import Card from '../../../Card'
 import OnlineCommunityCard from '../Cards/OnlineCommunityCard'
 import GetInTouchButton from '../../../Button/GetInTouchButton'
+import Emoji, { EmojiType } from '../../../Emoji'
 
 interface DataProp {
   online: number | ''
@@ -71,15 +72,10 @@ const Knowledge = () => {
             Sometimes it can be hard to find information about non-binary topics.
             <br />
             So we have decided to compile a list of information resources which are non-binary focused.{' '}
-            <span role='img' aria-labelledby='heart'>
-              ❤️
-            </span>
+            <Emoji type={EmojiType.HEART} />
             <br />
             If you know of any more resources which should belong here, please let us know{' '}
-            <span role='img' aria-labelledby='heart'>
-              😄
-            </span>
-            !
+            <Emoji type={EmojiType.GRIN} />!
           </p>
           <div className='md:space-x-4 md:space-y-0 space-y-4'>
             If you want to list your own community

@@ -8,6 +8,7 @@ import Card from '../../../Card'
 import CommunityCard from '../Cards/CommunityCard'
 import OnlineCommunityCard from '../Cards/OnlineCommunityCard'
 import GetInTouchButton from '../../../Button/GetInTouchButton'
+import Emoji, { EmojiType } from '../../../Emoji'
 
 interface DataProp {
   type: 'online' | '' | 'regional'
@@ -117,18 +118,12 @@ const Communities = () => {
           <h2>There are plenty of communities you can become a part of!</h2>
           <p>
             We know it can be difficult sometimes when you don&apos;t know enough people who are like you{' '}
-            <span role='img' aria-labelledby='heart'>
-              ❤️
-            </span>
+            <Emoji type={EmojiType.HEART} />
             <br />
             So we have decided to compile a list of communities which are non-binary focused or related which you can
             become a part of.
             <br />
-            If you know of any communities which belong here, please let us know{' '}
-            <span role='img' aria-labelledby='heart'>
-              😄
-            </span>
-            !
+            If you know of any communities which belong here, please let us know <Emoji type={EmojiType.GRIN} />!
           </p>
           <div className='md:space-x-4 md:space-y-0 space-y-4'>
             If you want to list your own community

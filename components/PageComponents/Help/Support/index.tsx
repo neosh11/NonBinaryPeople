@@ -7,6 +7,7 @@ import Button from '../../../Button'
 import Card from '../../../Card'
 import SupportCard from './SupportCard'
 import GetInTouchButton from '../../../Button/GetInTouchButton'
+import Emoji, { EmojiType } from '../../../Emoji'
 
 interface DataProp {
   location: number | ''
@@ -75,11 +76,7 @@ const Communities = () => {
             <br />
             So we have decided to compile a list of support links which
             <br />
-            If you know of any communities which belong here, please let us know{' '}
-            <span role='img' aria-labelledby='heart'>
-              ❤️
-            </span>
-            !
+            If you know of any communities which belong here, please let us know <Emoji type={EmojiType.HEART} />!
           </p>
           <div className='md:space-x-4 md:space-y-0 space-y-4'>
             If you want to list your own support network!
