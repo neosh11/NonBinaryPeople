@@ -19,8 +19,8 @@ const Header = ({ selectedKey }: { selectedKey: navKeys }) => {
       <div className='h-16 md:h-0' />
       <nav
         className={`${
-          menuOpen ? 'inset-0 z-40 bg-ter bg-opacity fixed opacity-90 shadow-md' : null
-        } bg-ter fixed md:relative shadow-md`}
+          menuOpen ? 'inset-0 bg-ter bg-opacity fixed opacity-90 shadow-md' : null
+        } bg-ter fixed md:relative shadow-md z-40 rounded-br-2xl md:rounded-none`}
       >
         <div className='px-4 sm:px-6 lg:px-8 '>
           {/* if not visible then remove grid and justify huhu */}
@@ -51,7 +51,7 @@ const Header = ({ selectedKey }: { selectedKey: navKeys }) => {
                 onClick={() => {
                   setMenuOpen(!menuOpen)
                 }}
-                className='bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white'
+                className='inline-flex items-center justify-center p-2 text-sec hover:text-white focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-white'
               >
                 <span className='sr-only'>Open main menu</span>
                 {/* <!--Heroicon name: menu Menu open: "hidden", Menu closed: "block" --> */}
