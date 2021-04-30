@@ -11,7 +11,8 @@ module.exports = {
 
     './components/**/**/**/*.tsx',
 
-    './components/**/**/**/**/*.tsx'
+    './components/**/**/**/**/*.tsx',
+    './components/**/**/**/**/**/*.tsx'
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -51,7 +52,7 @@ module.exports = {
         240: '40rem'
       },
       minWidth: {
-        'but': '15rem'
+        but: '15rem'
       }
     }
   },
